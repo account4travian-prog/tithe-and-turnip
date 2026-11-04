@@ -1,0 +1,24 @@
+{
+	"version": 1,
+	"max_happiness": 100,
+	"start_happiness": 60,
+	"happiness_fine_weight_scale": 15,
+	"happiness_choice_weight_scale": 20,
+	"raid_loss_chance_per_animal": 0.25,
+	"species": {
+		"chicken": {
+			"name": "Chicken", "purchase_price": 30,
+			"feed_item_id": "barley", "feed_amount": 1,
+			"product_item_id": "egg", "product_cycle_days": 1,
+			"happiness_gain_fed": 10, "happiness_loss_unfed": 20,
+			"quality_weights": { "common": 70, "fine": 25, "choice": 5 }
+		},
+		"goat": {
+			"name": "Goat", "purchase_price": 80,
+			"feed_item_id": "barley", "feed_amount": 2,
+			"product_item_id": "milk", "product_cycle_days": 2,
+			"happiness_gain_fed": 8, "happiness_loss_unfed": 15,
+			"quality_weights": { "common": 60, "fine": 30, "choice": 10 }
+		}
+	}
+}

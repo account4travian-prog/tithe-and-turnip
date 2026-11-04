@@ -1,0 +1,113 @@
+{
+	"version": 3,
+	"festivals": [
+		{
+			"id": "springturn_blessing",
+			"name": "Springturn Blessing",
+			"season": "spring",
+			"day": 18,
+			"start_hour": 10,
+			"end_hour": 14,
+			"location": { "zone": "nettleford", "x": 10, "y": 10 },
+			"standing_effects": { "village": 10, "church": 8 },
+			"contest": {
+				"mode": "furrow_race",
+				"name": "The Furrow Race",
+				"skill_id": "farming",
+				"has_direct_entry": true,
+				"has_cheer": true,
+				"has_bet": true,
+				"entrants": ["villager_2", "villager_4"],
+				"bet": { "min": 1, "max": 5 },
+				"odds": { "villager_2": 0.55, "villager_4": 0.45 },
+				"payout_multiplier": { "villager_2": 1.8, "villager_4": 2.2 },
+				"cheer_standing": { "village": 1 },
+				"cheer_opinion_delta": 2,
+				"enter_standing": { "village": 2 },
+				"payout_by_score": [0, 2, 5, 10],
+				"timing": {
+					"beats": [
+						{ "target_seconds": 2.0, "half_window_seconds": 0.55 },
+						{ "target_seconds": 5.0, "half_window_seconds": 0.55 },
+						{ "target_seconds": 8.0, "half_window_seconds": 0.55 }
+					],
+					"forgiveness_per_level_seconds": 0.07
+				}
+			}
+		},
+		{
+			"id": "midsummer_fair",
+			"name": "Midsummer Fair",
+			"season": "summer",
+			"day": 15,
+			"start_hour": 14,
+			"end_hour": 22,
+			"location": { "zone": "nettleford", "x": 5, "y": 5 },
+			"standing_effects": { "village": 12, "church": 4 },
+			"contest": {
+				"mode": "lifting",
+				"name": "The Lifting Contest",
+				"skill_id": "labor",
+				"has_direct_entry": true,
+				"has_cheer": true,
+				"has_bet": true,
+				"entrants": ["villager_5", "villager_4"],
+				"bet": { "min": 1, "max": 5 },
+				"odds": { "villager_5": 0.5, "villager_4": 0.5 },
+				"payout_multiplier": { "villager_5": 2.0, "villager_4": 2.0 },
+				"cheer_standing": { "village": 1 },
+				"cheer_opinion_delta": 2,
+				"enter_standing": { "village": 2 },
+				"payout_by_score": [0, 2, 5, 10],
+				"timing": {
+					"beats": [
+						{ "target_seconds": 2.0, "half_window_seconds": 0.5 },
+						{ "target_seconds": 4.5, "half_window_seconds": 0.5 },
+						{ "target_seconds": 7.0, "half_window_seconds": 0.5 }
+					],
+					"forgiveness_per_level_seconds": 0.06
+				}
+			}
+		},
+		{
+			"id": "harvest_home",
+			"name": "Harvest Home",
+			"season": "autumn",
+			"day": 10,
+			"start_hour": 12,
+			"end_hour": 20,
+			"location": { "zone": "nettleford", "x": 25, "y": 12 },
+			"standing_effects": { "village": 15, "church": 5 },
+			"contest": {
+				"mode": "sheaf_tying",
+				"name": "The Sheaf-Tying Contest",
+				"skill_id": "farming",
+				"has_direct_entry": false,
+				"has_cheer": false,
+				"has_bet": false,
+				"entrants": [],
+				"note": "TODO(Tier 2): entrants wait for the Tier 2 cast (world_bible.md Section V) - the contest stays closed until then."
+			}
+		},
+		{
+			"id": "winter_feast",
+			"name": "Winter Feast",
+			"season": "winter",
+			"day": 1,
+			"start_hour": 18,
+			"end_hour": 23,
+			"location": { "zone": "nettleford", "x": 2, "y": 2 },
+			"standing_effects": { "village": 10, "church": 10 },
+			"contest": {
+				"mode": "storytelling",
+				"name": "The Storytelling Contest",
+				"has_direct_entry": false,
+				"has_cheer": true,
+				"has_bet": false,
+				"entrants": ["villager_1", "villager_3", "villager_6"],
+				"cheer_standing": { "village": 1, "church": 1 },
+				"cheer_opinion_delta": 2
+			}
+		}
+	]
+}

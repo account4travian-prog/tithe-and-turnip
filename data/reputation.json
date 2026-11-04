@@ -1,0 +1,29 @@
+{
+	"version": 3,
+	"thresholds": {
+		"hostile": { "min": -100, "max": -50 },
+		"cold": { "min": -49, "max": -10 },
+		"neutral": { "min": -9, "max": 9 },
+		"warm": { "min": 10, "max": 49 },
+		"friendly": { "min": 50, "max": 100 }
+	},
+	"actions": {
+		"attack_villager": { "manor": -5, "village": -10, "church": 0, "opinion_delta": -30 },
+		"fail_upkeep": { "manor": -2, "village": 0, "church": 0 },
+		"pay_tithe_fully": { "manor": 2, "village": 0, "church": 1 },
+		"pay_tithe_partial": { "manor": -1, "village": 0, "church": 0 },
+		"fail_tithe": { "manor": -8, "village": 0, "church": 0 },
+		"church_donation_large": { "manor": 0, "village": 1, "church": 5 },
+		"church_donation_small": { "manor": 0, "village": 0, "church": 1 },
+		"complete_labor_day": { "manor": 2, "village": 1, "church": 0 },
+		"market_trade": { "manor": 1, "village": 0, "church": 0 },
+		"fail_corvee": { "manor": -4, "village": 0, "church": 0 },
+		"fail_court_fine": { "manor": -6, "village": 0, "church": 0 },
+		"defeat_bandit_raid": { "manor": 3, "village": 5, "church": 0 },
+		"ignore_raid": { "manor": -2, "village": -3, "church": 0 },
+		"attend_mass": { "manor": 0, "village": 1, "church": 5 },
+		"accuse_correctly": { "manor": 2, "village": 4, "church": 0, "opinion_delta": -20 },
+		"accuse_falsely": { "manor": -3, "village": -8, "church": 0, "opinion_delta": -10 },
+		"show_mercy": { "manor": 0, "village": 0, "church": 0, "opinion_delta": 15 }
+	}
+}

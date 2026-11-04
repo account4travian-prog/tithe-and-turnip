@@ -1,0 +1,71 @@
+{
+	"version": 3,
+	"default_zone": "fallowfield",
+	"spawn": { "zone": "fallowfield", "x": 12, "y": 10 },
+	"zones": [
+		{
+			"id": "fallowfield", "name": "Fallowfield",
+			"is_tillable": true, "allow_buildings": true, "forage_density": 0.8,
+			"exits": [
+				{ "edge": "north", "x_min": 6, "x_max": 17, "to": "north_strip", "arrive_at": { "x": 12, "y": 7 } },
+				{ "edge": "east", "y_min": 2, "y_max": 13, "to": "ediths_plot", "arrive_at": { "x": 0, "y": 8 } },
+				{ "edge": "south", "x_min": 4, "x_max": 19, "to": "south_fields", "arrive_at": { "x": 10, "y": 0 } }
+			],
+			"doors": [
+				{ "x": 11, "y": 12, "to": "player_home_interior", "arrive_at": { "x": 5, "y": 5 } }
+			]
+		},
+		{ "id": "north_strip", "name": "The North Strip", "is_tillable": true, "allow_buildings": false, "forage_density": 1.0, "exits": [
+			{ "edge": "north", "x_min": 2, "x_max": 21, "to": "nettleford", "arrive_at": { "x": 12, "y": 15 } },
+			{ "edge": "east", "y_min": 0, "y_max": 7, "to": "nettle_brook", "arrive_at": { "x": 0, "y": 16 } },
+			{ "edge": "south", "x_min": 0, "x_max": 13, "to": "fallowfield", "arrive_at": { "x": 12, "y": 0 } },
+			{ "edge": "south", "x_min": 14, "x_max": 23, "to": "ediths_plot", "arrive_at": { "x": 2, "y": 0 } }
+		] },
+		{ "id": "ediths_plot", "name": "Edith's Plot", "is_tillable": false, "allow_buildings": false, "forage_density": 0.0, "exits": [
+			{ "edge": "north", "x_min": 2, "x_max": 13, "to": "north_strip", "arrive_at": { "x": 16, "y": 7 } },
+			{ "edge": "east", "y_min": 0, "y_max": 13, "to": "nettle_brook", "arrive_at": { "x": 0, "y": 22 } },
+			{ "edge": "west", "y_min": 2, "y_max": 11, "to": "fallowfield", "arrive_at": { "x": 23, "y": 8 } },
+			{ "edge": "south", "x_min": 2, "x_max": 13, "to": "south_fields", "arrive_at": { "x": 16, "y": 0 } }
+		] },
+		{ "id": "nettleford", "name": "Nettleford", "is_tillable": false, "allow_buildings": false, "forage_density": 0.4, "exits": [
+			{ "edge": "north", "x_min": 4, "x_max": 19, "to": "manor", "arrive_at": { "x": 12, "y": 0 } },
+			{ "edge": "east", "y_min": 6, "y_max": 11, "to": "nettle_brook", "arrive_at": { "x": 0, "y": 10 } },
+			{ "edge": "south", "x_min": 2, "x_max": 21, "to": "north_strip", "arrive_at": { "x": 12, "y": 0 } }
+		] },
+		{ "id": "manor", "name": "The Manor of Harrowmere", "is_tillable": false, "allow_buildings": false, "forage_density": 0.5, "exits": [
+			{ "edge": "north", "x_min": 4, "x_max": 19, "to": "upland_commons", "arrive_at": { "x": 12, "y": 13 } },
+			{ "edge": "south", "x_min": 4, "x_max": 19, "to": "nettleford", "arrive_at": { "x": 12, "y": 15 } }
+		] },
+		{ "id": "upland_commons", "name": "The Upland Commons", "is_tillable": false, "allow_buildings": false, "forage_density": 1.2, "exits": [
+			{ "edge": "south", "x_min": 0, "x_max": 23, "to": "manor", "arrive_at": { "x": 10, "y": 0 } },
+			{ "edge": "east", "y_min": 0, "y_max": 13, "to": "cottersward", "arrive_at": { "x": 0, "y": 6 } }
+		] },
+		{ "id": "cottersward", "name": "Cottersward", "is_tillable": false, "allow_buildings": false, "forage_density": 1.2, "exits": [
+			{ "edge": "north", "x_min": 2, "x_max": 21, "to": "upland_commons", "arrive_at": { "x": 31, "y": 6 } },
+			{ "edge": "south", "x_min": 2, "x_max": 21, "to": "nettle_brook", "arrive_at": { "x": 0, "y": 0 } }
+		] },
+		{ "id": "nettle_brook", "name": "The Nettle Brook", "is_tillable": false, "allow_buildings": false, "forage_density": 1.0, "exits": [
+			{ "edge": "north", "x_min": 2, "x_max": 13, "to": "cottersward", "arrive_at": { "x": 12, "y": 0 } },
+			{ "edge": "west", "y_min": 4, "y_max": 15, "to": "nettleford", "arrive_at": { "x": 23, "y": 9 } },
+			{ "edge": "west", "y_min": 16, "y_max": 23, "to": "north_strip", "arrive_at": { "x": 23, "y": 4 } },
+			{ "edge": "west", "y_min": 24, "y_max": 27, "to": "ediths_plot", "arrive_at": { "x": 15, "y": 7 } },
+			{ "edge": "west", "y_min": 28, "y_max": 31, "to": "south_fields", "arrive_at": { "x": 23, "y": 6 } }
+		] },
+		{ "id": "south_fields", "name": "The South Fields", "is_tillable": true, "allow_buildings": false, "forage_density": 1.0, "exits": [
+			{ "edge": "north", "x_min": 0, "x_max": 11, "to": "fallowfield", "arrive_at": { "x": 10, "y": 15 } },
+			{ "edge": "north", "x_min": 13, "x_max": 23, "to": "ediths_plot", "arrive_at": { "x": 14, "y": 13 } },
+			{ "edge": "east", "y_min": 4, "y_max": 13, "to": "nettle_brook", "arrive_at": { "x": 15, "y": 10 } }
+		] },
+		{ "id": "player_home_interior", "name": "Home Interior", "is_tillable": false, "allow_buildings": false, "forage_density": 0.0, "is_interior": true,
+			"interior_visual": {
+				"shell_sprite_id": "interior_player_home_shell",
+				"fixtures": [
+					{ "sprite_id": "interior_player_home_door_south", "side": "south", "index": 5 },
+					{ "sprite_id": "interior_player_home_window_north", "side": "north", "index": 6 }
+				]
+			},
+			"exits": [
+				{ "edge": "south", "x_min": 5, "x_max": 5, "to": "fallowfield", "arrive_at": { "x": 11, "y": 13 } }
+			] }
+	]
+}

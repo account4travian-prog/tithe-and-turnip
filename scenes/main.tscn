@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cyyqs8xig5rc3"]
+
+[ext_resource type="Script" uid="uid://5abmh7tq2a05" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="Script" uid="uid://udl6bcu6nwd0" path="res://scripts/world/farm_grid.gd" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://b84gbycqdja86" path="res://scripts/player/player.gd" id="3_tbgi4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tefeu"]
+radius = 12.0
+
+[node name="Main" type="Node2D" unique_id=936221164]
+script = ExtResource("1_sugp2")
+
+[node name="FarmGrid" type="Node2D" parent="." unique_id=1562344527]
+script = ExtResource("2_jyhfs")
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=126711818]
+script = ExtResource("3_tbgi4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=120720706]
+shape = SubResource("CircleShape2D_tefeu")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1574804050]
+position = Vector2(320, 180)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=818059053]
+
+[node name="TimeLabel" type="Label" parent="HUD" unique_id=827148356]
+offset_left = 8.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 4.0
+
+[node name="EnergyLabel" type="Label" parent="HUD" unique_id=1458603939]
+offset_left = 8.0
+offset_top = 28.0
+offset_right = 8.0
+offset_bottom = 28.0
+
+[node name="MoneyLabel" type="Label" parent="HUD" unique_id=29859563]
+offset_left = 8.0
+offset_top = 52.0
+offset_right = 8.0
+offset_bottom = 52.0

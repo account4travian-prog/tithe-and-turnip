@@ -1,0 +1,7 @@
+{
+	"version": 1,
+	"suggested_donation": 3,
+	"standing_per_coin": 1,
+	"large_donation_threshold": 5,
+	"large_standing_mult": 1.5
+}

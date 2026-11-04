@@ -1,0 +1,38 @@
+{
+	"version": 1,
+	"sprites": [
+		{
+			"id": "interior_player_home_shell",
+			"kind": "static",
+			"texture": "res://assets/sprites/interiors/player_home_shell_rig_v4.png",
+			"frame_w": 549,
+			"frame_h": 485,
+			"anchor_x": 226,
+			"anchor_y": 74,
+			"draw_scale": 1.0,
+			"filter": "linear"
+		},
+		{
+			"id": "interior_player_home_door_south",
+			"kind": "static",
+			"texture": "res://assets/sprites/interiors/player_home_door_south_rig_v4.png",
+			"frame_w": 32,
+			"frame_h": 76,
+			"anchor_x": 16,
+			"anchor_y": 64,
+			"draw_scale": 1.0,
+			"filter": "linear"
+		},
+		{
+			"id": "interior_player_home_window_north",
+			"kind": "static",
+			"texture": "res://assets/sprites/interiors/player_home_window_north_rig_v4.png",
+			"frame_w": 24,
+			"frame_h": 60,
+			"anchor_x": 12,
+			"anchor_y": 57,
+			"draw_scale": 1.0,
+			"filter": "linear"
+		}
+	]
+}

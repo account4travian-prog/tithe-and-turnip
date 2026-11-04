@@ -1,0 +1,12 @@
+{
+	"version": 2,
+	"real_seconds_per_game_minute": 0.78,
+	"minutes_per_hour": 60,
+	"days_per_season": 28,
+	"days_per_week": 7,
+	"weeks_per_season": 4,
+	"seasons": ["spring", "summer", "autumn", "winter"],
+	"wake_hour": 6,
+	"sleep_hour": 24,
+	"calendar_events": []
+}

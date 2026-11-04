@@ -1,0 +1,10 @@
+{
+	"version": 1,
+	"supply_scale": 170,
+	"pressure_decay_per_day": 0.2,
+	"price_floor_mult": 0.5,
+	"price_cap_mult": 1.5,
+	"max_active_orders": 3,
+	"orders_per_market_day_min": 1,
+	"orders_per_market_day_max": 3
+}

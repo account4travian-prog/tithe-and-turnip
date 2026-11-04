@@ -1,0 +1,9 @@
+{
+	"version": 1,
+	"seasons": {
+		"spring": { "sunny": 0.60, "rain": 0.30, "overcast": 0.10 },
+		"summer": { "sunny": 0.80, "rain": 0.10, "overcast": 0.10 },
+		"autumn": { "sunny": 0.40, "rain": 0.40, "overcast": 0.20 },
+		"winter": { "snow": 0.80, "overcast": 0.20 }
+	}
+}

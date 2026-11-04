@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"buildings": {
+		"storage_chest": { "name": "Storage Chest", "footprint_w": 1, "footprint_h": 1, "cost_coin": 40, "cost_materials": { "flint": 5 }, "build_days": 1, "capacity": 50 },
+		"drying_shed": { "name": "Drying Shed", "footprint_w": 2, "footprint_h": 2, "cost_coin": 90, "cost_materials": { "flint": 10 }, "build_days": 2 },
+		"well_extra": { "name": "Extra Well", "footprint_w": 1, "footprint_h": 1, "cost_coin": 60, "cost_materials": { "flint": 8 }, "build_days": 1 },
+		"fence": { "name": "Fence Section", "footprint_w": 1, "footprint_h": 1, "cost_coin": 5, "cost_materials": { "wood": 2 }, "build_days": 0, "deterrence_bonus": 1 },
+		"cottage_upgrade": { "name": "Cottage Upgrade", "footprint_w": 3, "footprint_h": 3, "cost_coin": 200, "cost_materials": { "flint": 20, "wood": 20 }, "build_days": 3, "sleep_bonus_fraction": 0.15 },
+		"hearth": { "name": "Hearth", "footprint_w": 1, "footprint_h": 1, "cost_coin": 50, "cost_materials": { "flint": 6 }, "build_days": 1 },
+		"coop": { "name": "Animal Coop", "footprint_w": 2, "footprint_h": 2, "cost_coin": 70, "cost_materials": { "flint": 8 }, "build_days": 2, "animal_capacity": 4 }
+	}
+}

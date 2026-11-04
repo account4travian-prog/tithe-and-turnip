@@ -1,0 +1,65 @@
+{
+	"version": 1,
+	"orders": [
+		{
+			"crop_id": "turnip",
+			"min_quantity": 5,
+			"max_quantity": 8,
+			"base_reward_money": 45,
+			"reward_standing": "village",
+			"standing_amount": 3,
+			"deadline_days": 4,
+			"weight": 10
+		},
+		{
+			"crop_id": "barley",
+			"min_quantity": 5,
+			"max_quantity": 10,
+			"base_reward_money": 60,
+			"reward_standing": "village",
+			"standing_amount": 3,
+			"deadline_days": 5,
+			"weight": 8
+		},
+		{
+			"crop_id": "carrot",
+			"min_quantity": 4,
+			"max_quantity": 7,
+			"base_reward_money": 60,
+			"reward_standing": "village",
+			"standing_amount": 4,
+			"deadline_days": 3,
+			"weight": 8
+		},
+		{
+			"crop_id": "pea",
+			"min_quantity": 4,
+			"max_quantity": 7,
+			"base_reward_money": 70,
+			"reward_standing": "village",
+			"standing_amount": 4,
+			"deadline_days": 4,
+			"weight": 8
+		},
+		{
+			"crop_id": "onion",
+			"min_quantity": 3,
+			"max_quantity": 6,
+			"base_reward_money": 72,
+			"reward_standing": "village",
+			"standing_amount": 5,
+			"deadline_days": 5,
+			"weight": 6
+		},
+		{
+			"crop_id": "leek",
+			"min_quantity": 3,
+			"max_quantity": 5,
+			"base_reward_money": 78,
+			"reward_standing": "church",
+			"standing_amount": 4,
+			"deadline_days": 4,
+			"weight": 6
+		}
+	]
+}

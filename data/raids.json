@@ -1,0 +1,28 @@
+{
+	"version": 2,
+	"deterrence_decay_per_day": 2,
+	"deterrence_gain_per_victory": 15,
+	"min_deterrence_no_raid": 30,
+	"dynamic_raid_chance_per_day": 0.12,
+	"dynamic_raid_earliest_day": 16,
+	"dynamic_raid_size_min": 2,
+	"dynamic_raid_size_max": 4,
+	"night_raid_flavor_chance": 0.3,
+	"night_raid_size_bonus": 1,
+	"scripted_raids": [
+		{
+			"day": 15,
+			"season": "spring",
+			"location": "farm",
+			"enemies": [
+				{ "type": "bandit_melee", "count": 2 },
+				{ "type": "bandit_archer", "count": 1 }
+			]
+		}
+	],
+	"dynamic_enemy_pool": [
+		{ "type": "bandit_melee", "weight": 50 },
+		{ "type": "bandit_archer", "weight": 30 },
+		{ "type": "raid_leader", "weight": 20 }
+	]
+}

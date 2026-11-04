@@ -1,0 +1,9 @@
+{
+	"version": 2,
+	"enemies": {
+		"bandit_melee": { "id": "bandit_melee", "name": "Bandit", "health": 20, "damage": 5, "speed": 100, "reach": 50, "cooldown": 1.0, "behavior": "melee" },
+		"bandit_archer": { "id": "bandit_archer", "name": "Bandit Archer", "health": 15, "damage": 8, "speed": 80, "reach": 300, "cooldown": 1.5, "behavior": "ranged", "projectile_id": "arrow" },
+		"raid_leader": { "id": "raid_leader", "name": "Raid Leader", "health": 35, "damage": 10, "speed": 90, "reach": 60, "cooldown": 0.9, "behavior": "melee" },
+		"thief_villager": { "id": "thief_villager", "name": "Thief", "health": 10, "damage": 3, "speed": 120, "reach": 40, "cooldown": 0.6, "behavior": "melee", "is_thief": true }
+	}
+}

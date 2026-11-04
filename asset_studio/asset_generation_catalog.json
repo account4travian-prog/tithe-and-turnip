@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "purpose": "Offline source-of-truth for dimetric asset generation. This catalog does not alter gameplay data or placement.",
+  "projection_source": "res://scripts/globals/iso_projection.gd",
+  "style_references": [
+    "res://asset_studio/vertical_slice_test/coop.png",
+    "res://asset_studio/vertical_slice_test/farmhouse.png",
+    "res://asset_studio/vertical_slice_test/chapel.png",
+    "res://asset_studio/vertical_slice_test/well.png",
+    "res://asset_studio/vertical_slice_test/hearth.png"
+  ],
+  "module_library": [
+    { "id": "door_south", "kind": "door", "face": "south", "guide_kind": "face_module", "prompt": "a single wooden building door and frame already drawn for the South-facing lower-left dimetric wall plane" },
+    { "id": "door_east", "kind": "door", "face": "east", "guide_kind": "face_module", "prompt": "a single wooden building door and frame already drawn for the East-facing lower-right dimetric wall plane" },
+    { "id": "window_south", "kind": "window", "face": "south", "guide_kind": "face_module", "prompt": "a single shuttered window already drawn for the South-facing lower-left dimetric wall plane" },
+    { "id": "window_east", "kind": "window", "face": "east", "guide_kind": "face_module", "prompt": "a single shuttered window already drawn for the East-facing lower-right dimetric wall plane" },
+    { "id": "ramp_south", "kind": "ramp", "face": "south", "guide_kind": "face_module", "prompt": "a short timber entry ramp extending outward from the South-facing lower-left dimetric wall" },
+    { "id": "ramp_east", "kind": "ramp", "face": "east", "guide_kind": "face_module", "prompt": "a short timber entry ramp extending outward from the East-facing lower-right dimetric wall" },
+    { "id": "gate_south", "kind": "gate", "face": "south", "guide_kind": "face_module", "prompt": "a wide timber gate and frame already drawn for the South-facing lower-left dimetric wall plane" },
+    { "id": "gate_east", "kind": "gate", "face": "east", "guide_kind": "face_module", "prompt": "a wide timber gate and frame already drawn for the East-facing lower-right dimetric wall plane" }
+  ],
+  "assets": [
+    {
+      "id": "barn",
+      "display_name": "Barn",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [3, 3],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "south",
+      "roof_family": "gable",
+      "reference": "res://asset_studio/vertical_slice_test/barn.png",
+      "anchors": [
+        { "id": "door_primary", "module": "gate_south", "face": "south", "u": 0.5, "width_cells": 0.95, "height_ratio": 0.72 },
+        { "id": "window_east_1", "module": "window_east", "face": "east", "u": 0.54, "width_cells": 0.38, "height_ratio": 0.35 }
+      ]
+    },
+    {
+      "id": "chapel",
+      "display_name": "Chapel",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [2, 2],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "south",
+      "roof_family": "gable_tower",
+      "reference": "res://asset_studio/vertical_slice_test/chapel.png",
+      "anchors": [
+        { "id": "door_primary", "module": "door_south", "face": "south", "u": 0.5, "width_cells": 0.48, "height_ratio": 0.72 },
+        { "id": "window_east_1", "module": "window_east", "face": "east", "u": 0.52, "width_cells": 0.30, "height_ratio": 0.34 }
+      ]
+    },
+    {
+      "id": "coop",
+      "display_name": "Animal Coop",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [2, 2],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "south",
+      "roof_family": "gable",
+      "reference": "res://asset_studio/vertical_slice_test/coop.png",
+      "anchors": [
+        { "id": "door_primary", "module": "door_south", "face": "south", "u": 0.5, "width_cells": 0.52, "height_ratio": 0.65 },
+        { "id": "ramp_primary", "module": "ramp_south", "face": "south", "u": 0.5, "width_cells": 0.58, "height_ratio": 0.24 },
+        { "id": "window_east_1", "module": "window_east", "face": "east", "u": 0.55, "width_cells": 0.30, "height_ratio": 0.30 }
+      ]
+    },
+    {
+      "id": "cottage_upgrade",
+      "display_name": "Cottage Upgrade",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [3, 3],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "south",
+      "roof_family": "thatched_gable",
+      "reference": "res://asset_studio/vertical_slice_test/farmhouse.png",
+      "anchors": [
+        { "id": "door_primary", "module": "door_south", "face": "south", "u": 0.48, "width_cells": 0.50, "height_ratio": 0.72 },
+        { "id": "window_south_1", "module": "window_south", "face": "south", "u": 0.18, "width_cells": 0.32, "height_ratio": 0.34 },
+        { "id": "window_east_1", "module": "window_east", "face": "east", "u": 0.55, "width_cells": 0.34, "height_ratio": 0.34 }
+      ]
+    },
+    {
+      "id": "drying_shed",
+      "display_name": "Drying Shed",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [2, 2],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "east",
+      "roof_family": "lean_to",
+      "reference": "res://asset_studio/vertical_slice_test/drying_shed.png",
+      "anchors": [
+        { "id": "door_primary", "module": "door_east", "face": "east", "u": 0.5, "width_cells": 0.50, "height_ratio": 0.70 },
+        { "id": "ramp_primary", "module": "ramp_east", "face": "east", "u": 0.5, "width_cells": 0.54, "height_ratio": 0.22 }
+      ]
+    },
+    {
+      "id": "farmhouse",
+      "display_name": "Farmhouse",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [3, 2],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "south",
+      "roof_family": "thatched_gable",
+      "reference": "res://asset_studio/vertical_slice_test/farmhouse.png",
+      "anchors": [
+        { "id": "door_primary", "module": "door_south", "face": "south", "u": 0.46, "width_cells": 0.52, "height_ratio": 0.72 },
+        { "id": "window_south_1", "module": "window_south", "face": "south", "u": 0.16, "width_cells": 0.32, "height_ratio": 0.34 },
+        { "id": "window_east_1", "module": "window_east", "face": "east", "u": 0.55, "width_cells": 0.34, "height_ratio": 0.34 }
+      ]
+    },
+    {
+      "id": "manor_gatehouse",
+      "display_name": "Manor Gatehouse",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [4, 2],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "south",
+      "roof_family": "gatehouse",
+      "reference": "res://asset_studio/vertical_slice_test/manor_gatehouse.png",
+      "anchors": [
+        { "id": "gate_primary", "module": "gate_south", "face": "south", "u": 0.5, "width_cells": 1.10, "height_ratio": 0.72 },
+        { "id": "window_east_1", "module": "window_east", "face": "east", "u": 0.56, "width_cells": 0.32, "height_ratio": 0.30 }
+      ]
+    },
+    {
+      "id": "market_stall",
+      "display_name": "Market Stall",
+      "guide_kind": "structure_shell",
+      "footprint_cells": [2, 2],
+      "visible_faces": ["south", "east"],
+      "entrance_side": "none",
+      "roof_family": "awning",
+      "reference": "res://asset_studio/vertical_slice_test/market_stall.png",
+      "anchors": []
+    },
+    { "id": "well", "display_name": "Well", "guide_kind": "freestanding_prop", "reference": "res://asset_studio/vertical_slice_test/well.png" },
+    { "id": "hearth", "display_name": "Hearth", "guide_kind": "freestanding_prop", "reference": "res://asset_studio/vertical_slice_test/hearth.png" },
+    { "id": "storage_chest", "display_name": "Storage Chest", "guide_kind": "freestanding_prop", "reference": "res://asset_studio/vertical_slice_test/storage_chest.png" },
+    { "id": "fence_east", "display_name": "Fence East Segment", "guide_kind": "ground_segment", "orientation": "east", "reference": "res://asset_studio/vertical_slice_test/fence.png" },
+    { "id": "fence_south", "display_name": "Fence South Segment", "guide_kind": "ground_segment", "orientation": "south", "reference": "res://asset_studio/vertical_slice_test/fence.png" },
+    { "id": "barley", "display_name": "Barley Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/barley.png" },
+    { "id": "carrot", "display_name": "Carrot Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/carrot.png" },
+    { "id": "flax", "display_name": "Flax Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/flax.png" },
+    { "id": "leek", "display_name": "Leek Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/leek.png" },
+    { "id": "oat", "display_name": "Oat Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/oat.png" },
+    { "id": "onion", "display_name": "Onion Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/onion.png" },
+    { "id": "pea", "display_name": "Pea Crop", "guide_kind": "isolated_sprite", "category": "crop", "reference": "res://asset_studio/vertical_slice_test/pea.png" },
+    { "id": "chicken", "display_name": "Chicken", "guide_kind": "isolated_sprite", "category": "animal", "reference": "res://asset_studio/vertical_slice_test/chicken.png" },
+    { "id": "goat", "display_name": "Goat", "guide_kind": "isolated_sprite", "category": "animal", "reference": "res://asset_studio/vertical_slice_test/goat_terra_FIXED.png" },
+    { "id": "villager", "display_name": "Villager", "guide_kind": "isolated_sprite", "category": "character", "reference": "res://asset_studio/vertical_slice_test/villager.png" },
+    { "id": "flint", "display_name": "Flint", "guide_kind": "isolated_sprite", "category": "resource", "reference": "res://asset_studio/vertical_slice_test/flint.png" },
+    { "id": "morel", "display_name": "Morel", "guide_kind": "isolated_sprite", "category": "resource", "reference": "res://asset_studio/vertical_slice_test/morel.png" },
+    { "id": "wild_berry", "display_name": "Wild Berry", "guide_kind": "isolated_sprite", "category": "resource", "reference": "res://asset_studio/vertical_slice_test/wild_berry.png" },
+    { "id": "wood", "display_name": "Wood", "guide_kind": "isolated_sprite", "category": "resource", "reference": "res://asset_studio/vertical_slice_test/wood.png" },
+    { "id": "hoe", "display_name": "Hoe", "guide_kind": "isolated_sprite", "category": "tool", "reference": "res://asset_studio/vertical_slice_test/hoe.png" },
+    { "id": "knife", "display_name": "Knife", "guide_kind": "isolated_sprite", "category": "tool", "reference": "res://asset_studio/vertical_slice_test/knife.png" },
+    { "id": "pitchfork", "display_name": "Pitchfork", "guide_kind": "isolated_sprite", "category": "tool", "reference": "res://asset_studio/vertical_slice_test/pitchfork.png" },
+    { "id": "spade", "display_name": "Spade", "guide_kind": "isolated_sprite", "category": "tool", "reference": "res://asset_studio/vertical_slice_test/spade.png" },
+    { "id": "spear", "display_name": "Spear", "guide_kind": "isolated_sprite", "category": "tool", "reference": "res://asset_studio/vertical_slice_test/spear.png" },
+    { "id": "watering_can", "display_name": "Watering Can", "guide_kind": "isolated_sprite", "category": "tool", "reference": "res://asset_studio/vertical_slice_test/watering_can.png" }
+  ]
+}

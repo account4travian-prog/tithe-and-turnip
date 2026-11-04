@@ -1,0 +1,69 @@
+{
+	"version": 4,
+	"dialogues": [
+		{ "npc_id": "steward", "text": "The lord himself has heard your name spoken well.", "conditions": { "reputation.manor": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "steward", "text": "You keep the manor in good order. I notice.", "conditions": { "reputation.manor": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "steward", "text": "Work hard and you may eat.", "conditions": { "reputation.manor": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "steward", "text": "Keep your head down and pay what's owed.", "conditions": { "reputation.manor": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "steward", "text": "You're a stain on this manor. Watch yourself.", "conditions": { "reputation.manor": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "steward", "text": "The steward looks you over without comment.", "priority": -999 },
+
+		{ "npc_id": "priest", "text": "The church lights a candle for you, friend.", "conditions": { "reputation.church": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "priest", "text": "Your generosity is remembered in our prayers.", "conditions": { "reputation.church": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "priest", "text": "A donation to the church is never forgotten.", "conditions": { "reputation.church": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "priest", "text": "You have turned your back on the church's call.", "conditions": { "reputation.church": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "priest", "text": "The bishop will hear of this.", "conditions": { "reputation.church": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "priest", "text": "Father Tomas regards you calmly.", "priority": -999 },
+
+		{ "npc_id": "villager_1", "text": "Hilda claps your shoulder - you're one of us now.", "conditions": { "reputation.village": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "villager_1", "text": "Folks speak well of you at the well.", "conditions": { "reputation.village": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "villager_1", "text": "Cold spring, but the turnips will hold.", "conditions": { "reputation.village": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "villager_1", "text": "You've been keeping strange company, I hear.", "conditions": { "reputation.village": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "villager_1", "text": "Keep away from my door.", "conditions": { "reputation.village": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "villager_1", "text": "Hilda nods as you pass.", "priority": -999 },
+
+		{ "npc_id": "villager_2", "text": "Cedric shares his bread - you've earned it.", "conditions": { "reputation.village": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "villager_2", "text": "The village sings your praise at the inn.", "conditions": { "reputation.village": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "villager_2", "text": "Keep an eye on your coin pouch.", "conditions": { "reputation.village": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "villager_2", "text": "We all saw what you did. We don't forget.", "conditions": { "reputation.village": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "villager_2", "text": "Don't come any closer.", "conditions": { "reputation.village": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "villager_2", "text": "Cedric watches you warily.", "priority": -999 },
+
+		{ "npc_id": "villager_3", "text": "Marta laughs and waves you over.", "conditions": { "reputation.village": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "villager_3", "text": "You've a good name in the village, friend.", "conditions": { "reputation.village": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "villager_3", "text": "I'm just a simple farmer.", "conditions": { "reputation.village": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "villager_3", "text": "Best you keep your distance from me.", "conditions": { "reputation.village": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "villager_3", "text": "The village is tired of your kind.", "conditions": { "reputation.village": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "villager_3", "text": "Marta gives a thin smile.", "priority": -999 },
+
+		{ "npc_id": "villager_4", "text": "Bram insists you share his fire tonight.", "conditions": { "reputation.village": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "villager_4", "text": "The village owes you thanks, and says so.", "conditions": { "reputation.village": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "villager_4", "text": "Heard there's trouble on the roads.", "conditions": { "reputation.village": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "villager_4", "text": "I'd think twice before walking through the village.", "conditions": { "reputation.village": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "villager_4", "text": "You're not welcome at the crossroads.", "conditions": { "reputation.village": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "villager_4", "text": "Bram looks through you.", "priority": -999 },
+
+		{ "npc_id": "villager_5", "text": "Three years running, now - you've kept pace with me the whole way. That's more than most manage.", "conditions": { "reputation.village": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "villager_5", "text": "Your rows are straighter this month. I counted.", "conditions": { "reputation.village": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "villager_5", "text": "Six furlongs sown between us, near enough. Fair spring for it.", "conditions": { "reputation.village": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "villager_5", "text": "You're behind. I'm not saying by how much.", "conditions": { "reputation.village": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "villager_5", "text": "There's no plot there. I don't see one.", "conditions": { "reputation.village": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "villager_5", "text": "Edith counts something under her breath and doesn't look up.", "priority": -999 },
+
+		{ "npc_id": "villager_6", "text": "A sack in, four stone back this time - don't tell the steward I said so.", "conditions": { "reputation.village": { "min": 50 } }, "priority": 40 },
+		{ "npc_id": "villager_6", "text": "Bring it early next time. I'll grind it first, not last.", "conditions": { "reputation.village": { "min": 10 } }, "priority": 30 },
+		{ "npc_id": "villager_6", "text": "A sack in, three stone back. Same as always.", "conditions": { "reputation.village": { "min": -9 } }, "priority": 20 },
+		{ "npc_id": "villager_6", "text": "You'll wait your turn like everyone else.", "conditions": { "reputation.village": { "min": -49 } }, "priority": 10 },
+		{ "npc_id": "villager_6", "text": "Full multure, no exceptions. Not for you.", "conditions": { "reputation.village": { "min": -100 } }, "priority": 0 },
+		{ "npc_id": "villager_6", "text": "Osric weighs your sack without a word.", "priority": -999 },
+
+		{ "npc_id": "priest", "text": "A rare find, they tell me - blessed be a lucky forager.", "conditions": { "event_flag": "forage.gathered_morel" }, "priority": 45, "frequency": "once_per_day" },
+
+		{ "npc_id": "simkin", "text": "Steward Aldric speaks well of you. I mind him closely on that.", "conditions": { "opinion": { "npc": "steward", "min": 50 } }, "priority": 40 },
+		{ "npc_id": "simkin", "text": "Aldric doesn't complain about you. That's something, from him.", "conditions": { "opinion": { "npc": "steward", "min": 10 } }, "priority": 30 },
+		{ "npc_id": "simkin", "text": "I couldn't say. Aldric hasn't said much either way.", "conditions": { "opinion": { "npc": "steward", "min": -9 } }, "priority": 20 },
+		{ "npc_id": "simkin", "text": "Aldric's had words about you. I just weigh what's put on the scale.", "conditions": { "opinion": { "npc": "steward", "min": -49 } }, "priority": 10 },
+		{ "npc_id": "simkin", "text": "Aldric's warned me about you. I'd rather not linger over the count.", "conditions": { "opinion": { "npc": "steward", "min": -100 } }, "priority": 0 },
+		{ "npc_id": "simkin", "text": "The young clerk keeps his eyes on the scale, careful not to make an error.", "priority": -999 }
+	]
+}

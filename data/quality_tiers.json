@@ -1,0 +1,8 @@
+{
+	"version": 1,
+	"tiers": {
+		"common": { "price_mult": 1.0, "energy_mult": 1.0 },
+		"fine": { "price_mult": 1.5, "energy_mult": 1.5 },
+		"choice": { "price_mult": 2.0, "energy_mult": 2.0 }
+	}
+}

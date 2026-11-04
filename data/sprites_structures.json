@@ -1,0 +1,115 @@
+{
+	"version": 1,
+	"sprites": [
+		{
+			"id": "cottage_upgrade",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/home1pixelstyle/exterior.png",
+			"frame_w": 240,
+			"frame_h": 319,
+			"anchor_x": 120,
+			"anchor_y": 319,
+			"height_tiles": 2.5,
+			"footprint_w": 3,
+			"footprint_h": 3,
+			"filter": "nearest"
+		},
+		{
+			"id": "player_house",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/player_house_rig_v7.png",
+			"frame_w": 248,
+			"frame_h": 241,
+			"anchor_x": 140,
+			"anchor_y": 238,
+			"draw_scale": 1.0,
+			"footprint_w": 4,
+			"footprint_h": 3,
+			"filter": "linear"
+		},
+		{
+			"id": "alehouse",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/terra_alehouse_exterior.png",
+			"frame_w": 1254,
+			"frame_h": 1254,
+			"anchor_x": 627,
+			"anchor_y": 1183,
+			"height_tiles": 3.0,
+			"footprint_w": 3,
+			"footprint_h": 2,
+			"filter": "linear"
+		},
+		{
+			"id": "drying_shed",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/workshop1/Exterior_house.png",
+			"frame_w": 256,
+			"frame_h": 206,
+			"anchor_x": 128,
+			"anchor_y": 206,
+			"height_tiles": 2.0,
+			"footprint_w": 2,
+			"footprint_h": 2,
+			"filter": "linear"
+		},
+		{
+			"id": "coop",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/generated_atlas_linear_0.png",
+			"frames": [
+				{ "x": 2, "y": 2, "w": 250, "h": 256 }
+			],
+			"frame_w": 250,
+			"frame_h": 256,
+			"anchor_x": 125,
+			"anchor_y": 256,
+			"height_tiles": 2.0,
+			"footprint_w": 2,
+			"footprint_h": 2,
+			"filter": "linear"
+		},
+		{
+			"id": "hearth",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/generated_atlas_linear_0.png",
+			"frames": [
+				{ "x": 256, "y": 2, "w": 285, "h": 256 }
+			],
+			"frame_w": 285,
+			"frame_h": 256,
+			"anchor_x": 142,
+			"anchor_y": 256,
+			"height_tiles": 1.0,
+			"footprint_w": 1,
+			"footprint_h": 1,
+			"filter": "linear"
+		},
+		{
+			"id": "well",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/well_rig_v4.png",
+			"frame_w": 60,
+			"frame_h": 95,
+			"anchor_x": 29,
+			"anchor_y": 92,
+			"draw_scale": 1.0,
+			"footprint_w": 1,
+			"footprint_h": 1,
+			"filter": "linear"
+		},
+		{
+			"id": "chapel",
+			"kind": "static",
+			"texture": "res://assets/sprites/structures/chapel_replacement_v2.png",
+			"frame_w": 1122,
+			"frame_h": 1402,
+			"anchor_x": 561,
+			"anchor_y": 1340,
+			"height_tiles": 3.0,
+			"footprint_w": 3,
+			"footprint_h": 2,
+			"filter": "linear"
+		}
+	]
+}

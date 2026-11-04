@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"base_amount": 20,
+	"coin_per_held_strip": 10,
+	"merchet_fee": 25,
+	"upkeep": { "enabled": true, "interval_days": 7, "amount": 8 },
+	"in_kind_valuation_source": "market_buy_prices",
+	"quality_mult_source": "quality_tiers",
+	"labor": {
+		"daily_credit_cap": 10,
+		"chore_ids": ["till_demesne", "water_demesne", "harvest_demesne", "carry_produce"]
+	}
+}

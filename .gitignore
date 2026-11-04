@@ -1,0 +1,50 @@
+# Godot 4 generated folder (keep the UID cache so references stay stable)
+.godot/*
+!.godot/uid_cache.bin
+
+# Godot 3-era import leftovers (not used in 4.x, but harmless to ignore)
+.import/
+
+# OS / editor junk
+Thumbs.db
+.DS_Store
+*.tmp
+*.log
+
+# Private working notes (never committed)
+worksheet/
+
+# Claude Code local permissions (machine-specific, not shared)
+.claude/settings.local.json
+
+# Local AI asset-generation studio. The generated images, model outputs,
+# and scratch drafts stay out of git (large, regenerable, machine-local).
+# The KNOWLEDGE and TOOLING files are tracked deliberately: multiple agents
+# and the co-dev coordinate through them, so they need version history and
+# need to travel with the repo. Ignoring style_bible.md in particular
+# already caused a real miss - a DeepSeek agent built a prompt template
+# from a copy that went stale mid-session (2026-08-08).
+asset_studio/*
+!asset_studio/README.md
+!asset_studio/style_bible.md
+!asset_studio/prompt_templates.json
+!asset_studio/*.py
+!asset_studio/*.gd
+!asset_studio/asset_generation_catalog.json
+!asset_studio/asset_rig_catalog_v2.json
+!asset_studio/generation_pipeline.md
+!asset_studio/terra_trial_manifest.json
+!asset_studio/visual_canon.md
+!asset_studio/runpod/
+!asset_studio/runpod/*.py
+!asset_studio/runpod/*.sh
+!asset_studio/runpod/*.md
+# ...but never the generated art, receipts, or scratch planning drafts.
+asset_studio/**/*.png
+asset_studio/**/*.jpg
+asset_studio/*.receipt.json
+asset_studio/plan_art_integration*
+asset_studio/task_v4pro.md
+asset_studio/pro_v4pro.md
+asset_studio/reviews/
+asset_studio/__pycache__/

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"default_owned_zone": "fallowfield",
+	"strips": [
+		{ "id": "strip_north", "name": "Northern Strip", "zone": "north_strip", "rect": { "x": 0, "y": 0, "width": 24, "height": 8 } },
+		{ "id": "strip_southwest", "name": "Southwestern Strip", "zone": "south_fields", "rect": { "x": 0, "y": 0, "width": 11, "height": 14 } },
+		{ "id": "strip_southeast", "name": "Southeastern Strip", "zone": "south_fields", "rect": { "x": 13, "y": 0, "width": 11, "height": 14 } }
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"version": 5,
+	"move_speed": 220.0,
+	"camera_smoothing_speed": 600.0,
+	"interaction_assist_range": 2,
+	"interaction_assist_cone_degrees": 45.0,
+	"aim_repeat_delay": 0.22,
+	"aim_repeat_interval": 0.10,
+	"max_energy": 100.0,
+	"max_health": 50,
+	"tool_energy_cost": 4.0,
+	"start_money": 8,
+	"plant_energy_cost": 1,
+	"sleep_energy_restore_fraction": 0.6,
+	"sleep_health_regen": 15,
+	"exhaustion_recover_hours": 2,
+	"exhaustion_recover_energy": 20,
+	"pass_out_money_loss_pct": 0.2,
+	"pass_out_health_floor": 10,
+	"wound_recovery_days": 1,
+	"starter_items": {
+		"hoe_wood": 1,
+		"can_wood": 1,
+		"turnip_seed": 5,
+		"arrow": 5
+	}
+}

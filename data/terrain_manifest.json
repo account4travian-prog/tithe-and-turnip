@@ -1,0 +1,2794 @@
+{
+  "version": 2,
+  "default_season": "spring",
+  "seasons": {
+    "spring": {
+      "materials": {
+        "loamy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/loamy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/loamy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/loamy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/loamy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/sandy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/sandy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/sandy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/sandy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/rocky_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/rocky_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/rocky_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/rocky_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "loamy_grass|loamy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/loamy_grass__loamy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "loamy_tilled|loamy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/loamy_tilled__loamy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_grass|sandy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/sandy_grass__sandy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_tilled|sandy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/sandy_tilled__sandy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_grass|rocky_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/rocky_grass__rocky_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_tilled|rocky_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/rocky_tilled__rocky_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        }
+      },
+      "scatter": {}
+    },
+    "summer": {
+      "materials": {
+        "loamy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "loamy_grass|loamy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_grass__loamy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "loamy_tilled|loamy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/summer/loamy_tilled__loamy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_grass|sandy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_grass__sandy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_tilled|sandy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/summer/sandy_tilled__sandy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_grass|rocky_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_grass__rocky_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_tilled|rocky_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/summer/rocky_tilled__rocky_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        }
+      },
+      "scatter": {}
+    },
+    "autumn": {
+      "materials": {
+        "loamy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "loamy_grass|loamy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_grass__loamy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "loamy_tilled|loamy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/autumn/loamy_tilled__loamy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_grass|sandy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_grass__sandy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_tilled|sandy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/autumn/sandy_tilled__sandy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_grass|rocky_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_grass__rocky_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_tilled|rocky_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/autumn/rocky_tilled__rocky_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        }
+      },
+      "scatter": {}
+    },
+    "winter": {
+      "materials": {
+        "loamy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "loamy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "sandy_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_grass": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass_3.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        },
+        "rocky_tilled_wet": {
+          "variants": [
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled_wet_0.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled_wet_1.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled_wet_2.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "loamy_grass|loamy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_grass__loamy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "loamy_tilled|loamy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/winter/loamy_tilled__loamy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_grass|sandy_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_grass__sandy_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "sandy_tilled|sandy_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/winter/sandy_tilled__sandy_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_grass|rocky_tilled": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_grass__rocky_tilled/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        },
+        "rocky_tilled|rocky_grass": {
+          "entries": {
+            "0000": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0001": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0010": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0011": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0100": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0101": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0110": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "0111": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/0111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1000": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1000.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1001": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1001.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1010": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1010.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1011": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1011.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1100": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1100.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1101": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1101.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1110": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1110.png",
+              "frame_w": 128,
+              "frame_h": 96
+            },
+            "1111": {
+              "texture": "res://assets/sprites/terrain/winter/rocky_tilled__rocky_grass/1111.png",
+              "frame_w": 128,
+              "frame_h": 96
+            }
+          }
+        }
+      },
+      "scatter": {}
+    }
+  }
+}

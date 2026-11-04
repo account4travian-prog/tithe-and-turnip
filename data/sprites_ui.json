@@ -1,0 +1,69 @@
+{
+	"version": 1,
+	"sprites": [
+		{
+			"id": "adventure_ui_button_brown",
+			"kind": "static",
+			"texture": "res://assets/sprites/ui/adventure_ui/vector/button_brown.svg",
+			"frame_w": 48,
+			"frame_h": 24,
+			"filter": "linear",
+			"texture_margin_left": 6,
+			"texture_margin_right": 6,
+			"texture_margin_top": 6,
+			"texture_margin_bottom": 6,
+			"content_margin_left": 14,
+			"content_margin_right": 14,
+			"content_margin_top": 8,
+			"content_margin_bottom": 8
+		},
+		{
+			"id": "adventure_ui_button_red",
+			"kind": "static",
+			"texture": "res://assets/sprites/ui/adventure_ui/vector/button_red.svg",
+			"frame_w": 48,
+			"frame_h": 24,
+			"filter": "linear",
+			"texture_margin_left": 6,
+			"texture_margin_right": 6,
+			"texture_margin_top": 6,
+			"texture_margin_bottom": 6,
+			"content_margin_left": 14,
+			"content_margin_right": 14,
+			"content_margin_top": 8,
+			"content_margin_bottom": 8
+		},
+		{
+			"id": "adventure_ui_button_grey",
+			"kind": "static",
+			"texture": "res://assets/sprites/ui/adventure_ui/vector/button_grey.svg",
+			"frame_w": 48,
+			"frame_h": 24,
+			"filter": "linear",
+			"texture_margin_left": 6,
+			"texture_margin_right": 6,
+			"texture_margin_top": 6,
+			"texture_margin_bottom": 6,
+			"content_margin_left": 14,
+			"content_margin_right": 14,
+			"content_margin_top": 8,
+			"content_margin_bottom": 8
+		},
+		{
+			"id": "adventure_ui_panel_brown",
+			"kind": "static",
+			"texture": "res://assets/sprites/ui/adventure_ui/vector/panel_brown.svg",
+			"frame_w": 64,
+			"frame_h": 64,
+			"filter": "linear",
+			"texture_margin_left": 12,
+			"texture_margin_right": 12,
+			"texture_margin_top": 12,
+			"texture_margin_bottom": 12,
+			"content_margin_left": 28,
+			"content_margin_right": 28,
+			"content_margin_top": 24,
+			"content_margin_bottom": 24
+		}
+	]
+}

@@ -1,0 +1,49 @@
+{
+	"version": 3,
+	"gather_energy_cost": 2,
+	"max_digs_per_day": 8,
+	"spawn_chance_per_tile_per_day": 0.03,
+	"max_concurrent_spawns": 40,
+	"spawns": {
+		"rocky": [
+			{ "item_id": "wild_herb", "weight": 50, "yield_min": 1, "yield_max": 2 },
+			{ "item_id": "flint", "weight": 35, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "wood", "weight": 15, "yield_min": 1, "yield_max": 1 }
+		],
+		"sandy": [
+			{ "item_id": "wild_onion", "weight": 55, "yield_min": 1, "yield_max": 2 },
+			{ "item_id": "wild_herb", "weight": 20, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "wood", "weight": 20, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "flint", "weight": 5, "yield_min": 1, "yield_max": 1 }
+		],
+		"loamy": [
+			{ "item_id": "wild_berry", "weight": 40, "yield_min": 1, "yield_max": 3 },
+			{ "item_id": "wild_herb", "weight": 25, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "wood", "weight": 30, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "flint", "weight": 5, "yield_min": 1, "yield_max": 1 }
+		]
+	},
+	"dig_loot": {
+		"rocky": [
+			{ "item_id": "", "weight": 55, "yield_min": 0, "yield_max": 0 },
+			{ "item_id": "flint", "weight": 25, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "wild_turnip", "weight": 15, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "morel", "weight": 3, "yield_min": 1, "yield_max": 1, "season": ["spring"], "is_rare": true },
+			{ "item_id": "truffle", "weight": 2, "yield_min": 1, "yield_max": 1, "season": ["autumn"], "is_rare": true }
+		],
+		"sandy": [
+			{ "item_id": "wild_carrot", "weight": 50, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "", "weight": 30, "yield_min": 0, "yield_max": 0 },
+			{ "item_id": "wild_turnip", "weight": 15, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "morel", "weight": 3, "yield_min": 1, "yield_max": 1, "season": ["spring"], "is_rare": true },
+			{ "item_id": "truffle", "weight": 2, "yield_min": 1, "yield_max": 1, "season": ["autumn"], "is_rare": true }
+		],
+		"loamy": [
+			{ "item_id": "wild_turnip", "weight": 45, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "", "weight": 30, "yield_min": 0, "yield_max": 0 },
+			{ "item_id": "wild_carrot", "weight": 15, "yield_min": 1, "yield_max": 1 },
+			{ "item_id": "morel", "weight": 7, "yield_min": 1, "yield_max": 1, "season": ["spring"], "is_rare": true },
+			{ "item_id": "truffle", "weight": 3, "yield_min": 1, "yield_max": 1, "season": ["autumn"], "is_rare": true }
+		]
+	}
+}

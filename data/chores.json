@@ -1,0 +1,17 @@
+{
+	"version": 2,
+	"chores": [
+		{ "id": "till_demesne", "name": "Till Demesne", "energy_cost": 5, "credit": 3 },
+		{ "id": "water_demesne", "name": "Water Demesne", "energy_cost": 4, "credit": 2 },
+		{ "id": "harvest_demesne", "name": "Harvest Demesne", "energy_cost": 6, "credit": 4 },
+		{ "id": "carry_produce", "name": "Carry Produce", "energy_cost": 4, "credit": 3 }
+	],
+	"demesne": {
+		"delivery_feature": "stewards_demesne",
+		"needs_water_moisture_below": 50,
+		"sheaves_max": 12,
+		"sheaves_replenish_amount": 6,
+		"sheaves_replenish_interval_days": 1,
+		"sheaves_per_action": 1
+	}
+}

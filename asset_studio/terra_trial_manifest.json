@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "generated_on": "2026-08-09",
+  "backend": "Terra image generation",
+  "license_status": "Commercial use confirmed by the project owner on 2026-08-09.",
+  "integration_status": "player_house and Nettleford alehouse are wired as runtime structure textures; scale pass pending",
+  "review_status": "exterior_visuals_approved",
+  "notes": [
+    "All keyed files are transparent PNGs under ignored asset_studio/output/.",
+    "Finished structure art should use a guide-conditioned in-context pass; the modular catalog remains the placement contract and future-customization library, not a raw cut-and-paste final-art step.",
+    "Exterior entrances must remain on South/lower-left or East/lower-right faces."
+  ],
+  "assets": [
+    { "id": "alehouse_exterior", "file": "asset_studio/output/terra_alehouse_exterior.png", "kind": "structure_exterior", "entry_face": "south", "needs": ["scale test"] },
+    { "id": "villager_cottage_exterior", "file": "asset_studio/output/terra_villager_cottage_exterior.png", "kind": "structure_exterior", "entry_face": "south", "needs": ["scale test"] },
+    { "id": "villager_cottage_interior", "file": "asset_studio/output/terra_villager_cottage_interior.png", "kind": "empty_structure_interior", "entry_face": "south", "needs": ["interior scene integration", "human style approval"] },
+    { "id": "alehouse_interior", "file": "asset_studio/output/terra_alehouse_interior.png", "kind": "empty_structure_interior", "entry_face": "south", "needs": ["interior scene integration", "human style approval"] },
+    { "id": "chapel_interior", "file": "asset_studio/output/terra_chapel_interior.png", "kind": "empty_structure_interior", "entry_face": "south", "needs": ["interior scene integration", "human style approval"] },
+    { "id": "fallen_log", "file": "asset_studio/output/terra_fallen_log.png", "kind": "ground_prop", "needs": ["scale test", "human style approval"] },
+    { "id": "spring_ground_clutter", "file": "asset_studio/output/terra_spring_ground_clutter.png", "kind": "ground_decal", "needs": ["scale test", "human style approval"] }
+  ],
+  "existing_library_review": {
+    "checked_directory": "asset_studio/vertical_slice_test/",
+    "deterministic_metadata": "asset_studio/reviews/ (ignored)",
+    "vision_critic": "unavailable: Ollama connection refused on localhost:11434",
+    "known_reject": "goat_photoreal_drift.png",
+    "human_review_required": true
+  }
+}

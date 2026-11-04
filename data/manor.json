@@ -1,0 +1,13 @@
+{
+	"version": 2,
+	"court_days": [12, 26],
+	"fines": { "witnessed_violence": 15, "illegal_sale": 20, "false_accusation": 15 },
+	"corvee": { "chance_per_week": 0.4, "notice_days": 1, "credit_multiplier": 1.5 },
+	"black_market": {
+		"visit_days": [9, 20],
+		"price_premium_pct": 0.25,
+		"base_detection_chance": 0.2,
+		"standing_detection_reduction": 0.15
+	},
+	"price_drift": { "market_day_price_swing_pct": 0.05 }
+}

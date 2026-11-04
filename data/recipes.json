@@ -1,0 +1,16 @@
+{
+	"version": 2,
+	"recipes": [
+		{ "id": "dried_turnip", "station": "drying_shed", "inputs": { "turnip": 3 }, "output_item_id": "dried_turnip", "output_count": 1, "energy_cost": 3, "craft_days": 0, "skill_id": "farming", "skill_level_required": 1 },
+		{ "id": "dried_barley", "station": "drying_shed", "inputs": { "barley": 3 }, "output_item_id": "dried_barley", "output_count": 1, "energy_cost": 3, "craft_days": 0, "skill_id": "farming", "skill_level_required": 1 },
+		{ "id": "barley_ale", "station": "hearth", "inputs": { "barley": 4 }, "output_item_id": "barley_ale", "output_count": 1, "energy_cost": 4, "craft_days": 1, "skill_id": "farming", "skill_level_required": 2 },
+		{ "id": "pottage", "station": "hearth", "inputs": { "wild_herb": 2, "turnip": 1 }, "output_item_id": "pottage", "output_count": 1, "energy_cost": 3, "craft_days": 0, "skill_id": "", "skill_level_required": 0 },
+		{ "id": "berry_pie", "station": "hearth", "inputs": { "wild_berry": 3, "barley": 1 }, "output_item_id": "berry_pie", "output_count": 1, "energy_cost": 4, "craft_days": 0, "skill_id": "", "skill_level_required": 0 },
+		{ "id": "carrot_stew", "station": "hearth", "inputs": { "carrot": 2, "barley": 1 }, "output_item_id": "carrot_stew", "output_count": 1, "energy_cost": 3, "craft_days": 0, "skill_id": "", "skill_level_required": 0 },
+		{ "id": "pea_soup", "station": "hearth", "inputs": { "pea": 3 }, "output_item_id": "pea_soup", "output_count": 1, "energy_cost": 3, "craft_days": 0, "skill_id": "", "skill_level_required": 0 },
+		{ "id": "leek_pie", "station": "hearth", "inputs": { "leek": 2, "barley": 1 }, "output_item_id": "leek_pie", "output_count": 1, "energy_cost": 4, "craft_days": 0, "skill_id": "farming", "skill_level_required": 1 },
+		{ "id": "morel_stew", "station": "hearth", "inputs": { "morel": 1, "wild_herb": 1 }, "output_item_id": "morel_stew", "output_count": 1, "energy_cost": 3, "craft_days": 0, "skill_id": "farming", "skill_level_required": 1 },
+		{ "id": "compost", "station": "drying_shed", "inputs": { "spoiled_crop": 2 }, "output_item_id": "compost", "output_count": 1, "energy_cost": 2, "craft_days": 0, "skill_id": "farming", "skill_level_required": 2 },
+		{ "id": "betrothal_ring", "station": "hearth", "inputs": { "flax_fibre": 1 }, "output_item_id": "betrothal_ring", "output_count": 1, "energy_cost": 2, "craft_days": 0, "skill_id": "", "skill_level_required": 0 }
+	]
+}

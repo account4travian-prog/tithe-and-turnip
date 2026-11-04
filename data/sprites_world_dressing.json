@@ -1,0 +1,678 @@
+{
+  "version": 2,
+  "sprites": [
+    {
+      "id": "world_dressing_rock_flint",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/rocks1/Rock1_1.png",
+      "frame_w": 64,
+      "frame_h": 64,
+      "anchor_x": 32,
+      "anchor_y": 64,
+      "height_tiles": 0.75,
+      "footprint_w": 1,
+      "footprint_h": 1,
+      "filter": "linear"
+    },
+    {
+      "id": "world_dressing_plant_herb",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/bushes1/Assets/Fern1_1.png",
+      "frame_w": 64,
+      "frame_h": 64,
+      "anchor_x": 32,
+      "anchor_y": 64,
+      "height_tiles": 0.6,
+      "footprint_w": 1,
+      "footprint_h": 1,
+      "filter": "linear"
+    },
+    {
+      "id": "world_dressing_plant_berry",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/bushes1/Assets/Bush_red_flowers1.png",
+      "frame_w": 64,
+      "frame_h": 64,
+      "anchor_x": 32,
+      "anchor_y": 64,
+      "height_tiles": 0.6,
+      "footprint_w": 1,
+      "footprint_h": 1,
+      "filter": "linear"
+    },
+    {
+      "id": "world_dressing_plant_onion",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/bushes1/Assets/Bush_simple1_1.png",
+      "frame_w": 32,
+      "frame_h": 32,
+      "anchor_x": 16,
+      "anchor_y": 32,
+      "height_tiles": 0.55,
+      "footprint_w": 1,
+      "footprint_h": 1,
+      "filter": "linear"
+    },
+    {
+      "id": "world_dressing_tree_broken",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/trees1/Trees/Broken_tree1.png",
+      "frame_w": 32,
+      "frame_h": 32,
+      "anchor_x": 16,
+      "anchor_y": 32,
+      "height_tiles": 0.9,
+      "footprint_w": 1,
+      "footprint_h": 1,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_barley_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 99,
+          "h": 96
+        }
+      ],
+      "frame_w": 99,
+      "frame_h": 96,
+      "anchor_x": 49,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_barley_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 105,
+          "y": 2,
+          "w": 96,
+          "h": 96
+        }
+      ],
+      "frame_w": 96,
+      "frame_h": 96,
+      "anchor_x": 48,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_barley_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 205,
+          "y": 2,
+          "w": 75,
+          "h": 96
+        }
+      ],
+      "frame_w": 75,
+      "frame_h": 96,
+      "anchor_x": 37,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_carrot_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 284,
+          "y": 2,
+          "w": 105,
+          "h": 96
+        }
+      ],
+      "frame_w": 105,
+      "frame_h": 96,
+      "anchor_x": 52,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_carrot_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 393,
+          "y": 2,
+          "w": 137,
+          "h": 96
+        }
+      ],
+      "frame_w": 137,
+      "frame_h": 96,
+      "anchor_x": 68,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_carrot_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 534,
+          "y": 2,
+          "w": 116,
+          "h": 96
+        }
+      ],
+      "frame_w": 116,
+      "frame_h": 96,
+      "anchor_x": 58,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_flax_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 654,
+          "y": 2,
+          "w": 50,
+          "h": 96
+        }
+      ],
+      "frame_w": 50,
+      "frame_h": 96,
+      "anchor_x": 25,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_flax_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 708,
+          "y": 2,
+          "w": 56,
+          "h": 96
+        }
+      ],
+      "frame_w": 56,
+      "frame_h": 96,
+      "anchor_x": 28,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_flax_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 768,
+          "y": 2,
+          "w": 56,
+          "h": 96
+        }
+      ],
+      "frame_w": 56,
+      "frame_h": 96,
+      "anchor_x": 28,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_leek_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 828,
+          "y": 2,
+          "w": 34,
+          "h": 96
+        }
+      ],
+      "frame_w": 34,
+      "frame_h": 96,
+      "anchor_x": 17,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_leek_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 866,
+          "y": 2,
+          "w": 80,
+          "h": 96
+        }
+      ],
+      "frame_w": 80,
+      "frame_h": 96,
+      "anchor_x": 40,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_leek_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 950,
+          "y": 2,
+          "w": 57,
+          "h": 96
+        }
+      ],
+      "frame_w": 57,
+      "frame_h": 96,
+      "anchor_x": 28,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_oat_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1011,
+          "y": 2,
+          "w": 121,
+          "h": 96
+        }
+      ],
+      "frame_w": 121,
+      "frame_h": 96,
+      "anchor_x": 60,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_oat_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1136,
+          "y": 2,
+          "w": 81,
+          "h": 96
+        }
+      ],
+      "frame_w": 81,
+      "frame_h": 96,
+      "anchor_x": 40,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_oat_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1221,
+          "y": 2,
+          "w": 64,
+          "h": 96
+        }
+      ],
+      "frame_w": 64,
+      "frame_h": 96,
+      "anchor_x": 32,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_onion_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1289,
+          "y": 2,
+          "w": 60,
+          "h": 96
+        }
+      ],
+      "frame_w": 60,
+      "frame_h": 96,
+      "anchor_x": 30,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_onion_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1353,
+          "y": 2,
+          "w": 41,
+          "h": 96
+        }
+      ],
+      "frame_w": 41,
+      "frame_h": 96,
+      "anchor_x": 20,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_onion_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1398,
+          "y": 2,
+          "w": 59,
+          "h": 96
+        }
+      ],
+      "frame_w": 59,
+      "frame_h": 96,
+      "anchor_x": 29,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_pea_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1461,
+          "y": 2,
+          "w": 98,
+          "h": 96
+        }
+      ],
+      "frame_w": 98,
+      "frame_h": 96,
+      "anchor_x": 49,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_pea_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1563,
+          "y": 2,
+          "w": 61,
+          "h": 96
+        }
+      ],
+      "frame_w": 61,
+      "frame_h": 96,
+      "anchor_x": 30,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_pea_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1628,
+          "y": 2,
+          "w": 77,
+          "h": 96
+        }
+      ],
+      "frame_w": 77,
+      "frame_h": 96,
+      "anchor_x": 38,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_stage_barley",
+      "kind": "crop_stage_set",
+      "crop_id": "barley",
+      "stages": [
+        {
+          "sprite_id": "crop_barley_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_barley_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_barley_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_carrot",
+      "kind": "crop_stage_set",
+      "crop_id": "carrot",
+      "stages": [
+        {
+          "sprite_id": "crop_carrot_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_carrot_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_carrot_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_flax",
+      "kind": "crop_stage_set",
+      "crop_id": "flax",
+      "stages": [
+        {
+          "sprite_id": "crop_flax_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_flax_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_flax_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_leek",
+      "kind": "crop_stage_set",
+      "crop_id": "leek",
+      "stages": [
+        {
+          "sprite_id": "crop_leek_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_leek_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_leek_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_oat",
+      "kind": "crop_stage_set",
+      "crop_id": "oat",
+      "stages": [
+        {
+          "sprite_id": "crop_oat_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_oat_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_oat_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_onion",
+      "kind": "crop_stage_set",
+      "crop_id": "onion",
+      "stages": [
+        {
+          "sprite_id": "crop_onion_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_onion_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_onion_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_pea",
+      "kind": "crop_stage_set",
+      "crop_id": "pea",
+      "stages": [
+        {
+          "sprite_id": "crop_pea_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_pea_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_pea_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_stage_turnip",
+      "kind": "crop_stage_set",
+      "crop_id": "turnip",
+      "stages": [
+        {
+          "sprite_id": "crop_turnip_stage_1",
+          "min_progress": 0.0
+        },
+        {
+          "sprite_id": "crop_turnip_stage_2",
+          "min_progress": 0.5
+        },
+        {
+          "sprite_id": "crop_turnip_stage_3",
+          "min_progress": 1.0
+        }
+      ]
+    },
+    {
+      "id": "crop_turnip_stage_1",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1709,
+          "y": 2,
+          "w": 162,
+          "h": 96
+        }
+      ],
+      "frame_w": 162,
+      "frame_h": 96,
+      "anchor_x": 81,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_turnip_stage_2",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 1875,
+          "y": 2,
+          "w": 136,
+          "h": 96
+        }
+      ],
+      "frame_w": 136,
+      "frame_h": 96,
+      "anchor_x": 68,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    },
+    {
+      "id": "crop_turnip_stage_3",
+      "kind": "static",
+      "texture": "res://assets/sprites/world_dressing/generated_atlas_linear_0.png",
+      "frames": [
+        {
+          "x": 2,
+          "y": 102,
+          "w": 112,
+          "h": 96
+        }
+      ],
+      "frame_w": 112,
+      "frame_h": 96,
+      "anchor_x": 56,
+      "anchor_y": 96,
+      "height_tiles": 1.0,
+      "filter": "linear"
+    }
+  ]
+}

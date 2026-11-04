@@ -1,0 +1,8 @@
+{
+	"version": 3,
+	"soils": {
+		"loamy": { "moisture_decay_per_day": 4.0, "growth_speed_mult": 1.1, "fine_quality_bonus": 5, "choice_quality_bonus": 2, "color": "#7a5b32", "fertility_init": 70, "fertility_recovery_per_day": 1.5, "high_fertility_quality_bonus": 5, "high_fertility_threshold": 60 },
+		"sandy": { "moisture_decay_per_day": 7.0, "growth_speed_mult": 1.3, "fine_quality_bonus": -5, "choice_quality_bonus": -5, "color": "#c2a05a", "fertility_init": 50, "fertility_recovery_per_day": 1.0, "high_fertility_quality_bonus": 3, "high_fertility_threshold": 60 },
+		"rocky": { "moisture_decay_per_day": 1.5, "growth_speed_mult": 0.75, "fine_quality_bonus": -8, "choice_quality_bonus": -8, "color": "#6f6f6f", "fertility_init": 30, "fertility_recovery_per_day": 0.75, "high_fertility_quality_bonus": 2, "high_fertility_threshold": 60 }
+	}
+}

@@ -1,0 +1,57 @@
+{
+  "version": 3,
+  "flux_compose": {
+    "description": "Stage-1 composition template for --compose-with-flux (added 2026-08-09 after a real failure: the structure category's SDXL+LoRA pipeline could not reliably isolate 'iconic scene' subjects like a farmhouse/chapel/barn on plain gray - it kept drawing a full garden/landscape scene around them, and negative-prompting against scenery/pedestals/platforms did not fix it, sometimes made it worse. FLUX.1 schnell's stronger instruction-following DOES isolate reliably, but only with POSITIVE-ONLY framing - naming a forbidden object even in the negative (tried 'no ground tile, no base, no platform, no pedestal') tended to invoke a literal floating platform instead of removing it, on both FLUX and the earlier SDXL attempts. Say what IS there, not what should be absent. This stage's output then becomes --init-image for the category's own template (structure, item, etc.) via generate.py --compose-with-flux, which restyles it into the established look at a moderate denoise without needing to re-solve isolation from scratch.",
+    "prompt_prefix": "flat 2D game asset icon illustration of ",
+    "prompt_suffix": ", cel-shaded painterly style, bold dark outlines, isometric view, the object hovers alone in empty space entirely surrounded by plain flat gray, a single clean icon graphic, minimalist centered product-icon composition, no text",
+    "checkpoint": "flux1-schnell-fp8.safetensors",
+    "steps": 4,
+    "cfg": 1.0,
+    "width": 1024,
+    "height": 1024
+  },
+  "categories": {
+    "item": {
+      "description": "Crops, tools, animals, and small props. Revised 2026-08-08 after live testing during a vertical-slice batch: the original 'clean pixel art, 2D farming game sprite' phrasing tiled into a repeating pattern on 'carrot' (subject-specific training bias, not fixable by negative-prompting alone - retried 3 ways before finding the fix) and drifted fully photorealistic on 'chicken' despite saying 'pixel art style'. 'children's book cartoon illustration' + explicit 'thick bold black outlines' + explicit 'one item, no pattern' proved reliable across both failure modes - verified live on carrot (fixed) and chicken (fixed) in the same session. Kept as one category rather than splitting further; if a future subject needs a third variant, add one rather than overloading this one again.",
+      "prompt_prefix": "children's book cartoon illustration, a single ",
+      "prompt_suffix": ", cute game item icon, flat cel-shaded colors, thick bold black outlines, simplified rounded shapes, dimetric view, one item only, no pattern, isolated on plain flat gray background, centered, no text",
+      "negative_additions": "pattern, tile, tiled, grid, multiple items, repeating, seamless pattern, realistic photo, photorealistic, detailed texture, lifelike",
+      "width": 1024,
+      "height": 1024
+    },
+    "structure": {
+      "description": "Buildings and architecture - the proven 2D-painting template from style_bible.md (farmhouse_v2, seed 202).",
+      "prompt_prefix": "2D digital painting, hand-painted game art illustration, ",
+      "prompt_suffix": ", timber-framed / stone / thatched (as applicable), dimetric isometric perspective, painterly cel-shaded style, bold clean dark outlines around every shape, flat warm color fills with soft brush shading, not 3D render, not photorealistic, not a miniature diorama, video game sprite illustration, cozy Harvest Moon Story of Seasons art style, warm earthy palette, soft top-left lighting, isolated on plain flat gray background, no people, no text",
+      "negative_additions": "cgi, unreal engine, octane render, miniature diorama, tilt shift, realistic photo, grass, lawn, garden, landscape, trees, foliage, bushes, flowers, outdoor scene, environment, scenery, dirt path, fence, ground plane, ground shadow, multiple objects, scene, background details",
+      "flux_camera_hint": "three-quarter dimetric angle showing two full wall faces and both roof slopes clearly - not a flat symmetric front elevation, not a straight head-on view of a single wall; the camera is rotated diagonally so one wide wall face (carrying the entrance/doorway) faces toward the lower-left of the frame, and a second, narrower wall face is visible on the right side; the building is large and fills most of the frame, not small or distant",
+      "width": 1024,
+      "height": 1024
+    },
+    "structure_shell": {
+      "description": "Door/window-free building shell for the deterministic dimetric modular pipeline. Use the target's generated guide and its terra_prompt as the primary composition contract; this ComfyUI template is a commercial-safe FLUX.1-schnell fallback for shell concepts, not a replacement for a guide-aware Terra render.",
+      "prompt_prefix": "2D digital painting, hand-painted game art illustration, a single dimetric building shell: ",
+      "prompt_suffix": ", exactly two adjacent wall faces: the South-facing wall is the screen lower-left face and the East-facing wall is the screen lower-right face; strong readable roof silhouette, continuous plain wall material reserved for later opaque door and window modules, bold clean dark outlines around every shape, flat warm color fills with soft brush shading, cozy medieval farming game sprite illustration, isolated transparent-ready asset on an even neutral field, no people, no text",
+      "negative_additions": "cgi, unreal engine, octane render, miniature diorama, tilt shift, realistic photo, landscape, trees, foliage, garden, ground platform, frame, label",
+      "flux_camera_hint": "fixed 64 by 48 dimetric convention, not a frontal elevation and not a top-down or side-scrolling view; preserve the South lower-left and East lower-right wall orientation",
+      "width": 1024,
+      "height": 1024
+    },
+    "structure_module": {
+      "description": "A transparent, opaque-backed reusable South/East face module. Generate it from its individual module guide so the compositor, not the model, decides final placement.",
+      "prompt_prefix": "2D digital painting, hand-painted game asset module, ",
+      "prompt_suffix": ", one opaque painted architectural module on the specified dimetric face plane, generous transparent surrounding space, bold dark outline, warm cel-shaded material, isolated game sprite component, no people, no text",
+      "negative_additions": "cgi, realistic photo, miniature diorama, building shell, landscape, ground platform, label",
+      "width": 1024,
+      "height": 1024
+    },
+    "terrain_material": {
+      "description": "ADR-042 terrain textures - a flat overhead PATCH of a ground material (grass/dirt/tilled soil), not an isolated object. This is source material for the offline make_seamless.py wrap-blend step, NOT expected to be seamless itself out of the generator - Terra's own warning (style_bible.md Round 4/ADR-042 consult) is that AI-claimed 'seamless' is unreliable, so seamlessness is solved deterministically in Python afterward, not by prompting. What this prompt needs to get right instead: flat top-down (NOT isometric - the diamond projection handles that at draw time), even lighting with NO directional shadow (a shadow gradient across the swatch would tile visibly), consistent small-scale detail (blades/clumps/furrows at a uniform size so nothing reads as a single 'special' blown-up feature), and the same cel-shaded/bold-outline family look as every other asset.",
+      "prompt_prefix": "children's book cartoon illustration, seamless top-down texture swatch of ",
+      "prompt_suffix": ", flat overhead view, no perspective, no isometric angle, flat cel-shaded colors, thick bold outlines on individual details only (blades, clumps, furrows - not a border around the whole image), uniform small-scale repeating detail, even flat lighting, no directional shadow, no vignette, no single focal object, tileable ground material, no border, no frame, edge-to-edge coverage, no text",
+      "negative_additions": "isometric, 3d perspective, single object, isolated icon, vignette, drop shadow, directional lighting, gradient lighting, border, frame, photo, photorealistic, realistic photo",
+      "width": 1024,
+      "height": 1024
+    }
+  }
+}

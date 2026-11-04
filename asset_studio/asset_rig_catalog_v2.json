@@ -1,0 +1,68 @@
+{
+  "version": 2,
+  "purpose": "Offline source of truth for deterministic dimetric golden-proof art rigs.",
+  "projection_source": "res://scripts/globals/iso_projection.gd",
+  "source_scale": 4,
+  "materials": [
+    { "id": "whitewash_timber", "kind": "surface_material", "repeat_mode": "tile", "allowed_surfaces": ["wall", "interior_wall"], "default_edge_overlap_source_px": 4 },
+    { "id": "gold_thatch", "kind": "surface_material", "repeat_mode": "tile", "allowed_surfaces": ["roof"], "default_edge_overlap_source_px": 4 },
+    { "id": "oak_floorboards", "kind": "surface_material", "repeat_mode": "tile", "allowed_surfaces": ["floor"], "default_edge_overlap_source_px": 0 }
+  ],
+  "modules": [
+    { "id": "door_oak_flat", "kind": "door", "source_orientation": "flat_front", "allowed_surface_faces": ["south", "east", "north", "west"], "requires_opaque_frame": true },
+    { "id": "window_shutter_flat", "kind": "window", "source_orientation": "flat_front", "allowed_surface_faces": ["south", "east", "north", "west"], "requires_opaque_frame": true }
+  ],
+  "assets": [
+    {
+      "id": "farmhouse",
+      "kind": "structure",
+      "footprint_cells": [3, 2],
+      "entrance_side": "south",
+      "components": [
+        { "id": "main_body", "kind": "prism", "footprint_rect_cells": [0, 0, 3, 2], "wall_height_tiles": 1.75, "south_material": "whitewash_timber", "east_material": "whitewash_timber" },
+        { "id": "main_roof", "kind": "gable_roof", "body_id": "main_body", "ridge_axis": "east_west", "rise_tiles": 0.65, "material": "gold_thatch" }
+      ],
+      "slots": [
+        { "id": "door_primary", "kind": "door", "surface": "main_body.south", "module": "door_oak_flat", "u_center": 0.46, "width_cells": 0.52, "bottom_ratio": 0.0, "height_ratio": 0.72 },
+        { "id": "window_east_1", "kind": "window", "surface": "main_body.east", "module": "window_shutter_flat", "u_center": 0.55, "width_cells": 0.34, "bottom_ratio": 0.36, "height_ratio": 0.34 }
+      ]
+    },
+    {
+      "id": "farmhouse_wide",
+      "kind": "structure",
+      "footprint_cells": [4, 3],
+      "entrance_side": "south",
+      "components": [
+        { "id": "main_body", "kind": "prism", "footprint_rect_cells": [0, 0, 4, 3], "wall_height_tiles": 1.25, "south_material": "whitewash_timber", "east_material": "whitewash_timber" },
+        { "id": "main_roof", "kind": "gable_roof", "body_id": "main_body", "ridge_axis": "east_west", "rise_tiles": 0.55, "overhang_cells": [0.12, 0.18], "material": "gold_thatch" }
+      ],
+      "slots": [
+        { "id": "door_primary", "kind": "door", "surface": "main_body.south", "module": "door_oak_flat", "u_center": 0.625, "width_cells": 0.78, "bottom_ratio": 0.0, "height_ratio": 0.92 },
+        { "id": "window_east_1", "kind": "window", "surface": "main_body.east", "module": "window_shutter_flat", "u_center": 0.40, "width_cells": 0.82, "bottom_ratio": 0.26, "height_ratio": 0.54 }
+      ]
+    },
+    {
+      "id": "player_home_interior",
+      "kind": "interior",
+      "zone_id": "player_home_interior",
+      "room_cells": [10, 7],
+      "floor_material": "oak_floorboards",
+      "wall_material": "whitewash_timber",
+      "visible_wall_sides": ["north", "west"],
+      "cutaway_sides": ["south", "east"],
+      "wall_height_tiles": 1.5,
+      "fixtures": [
+        { "id": "door_south", "kind": "door", "side": "south", "index": 5, "module": "door_oak_flat", "span_cells": 0.85, "height_ratio": 0.72, "bottom_ratio": 0.0 },
+        { "id": "window_north", "kind": "window", "side": "north", "index": 6, "module": "window_shutter_flat", "span_cells": 0.58, "height_ratio": 0.34, "bottom_ratio": 0.36 }
+      ]
+    },
+    {
+      "id": "well",
+      "kind": "freestanding_prop",
+      "footprint_cells": [1, 1],
+      "contact_region": { "kind": "ellipse", "center": [0.5, 0.5], "size_cells": [0.58, 0.38] },
+      "max_height_tiles": 1.5,
+      "max_overhang_cells": [0.18, 0.18, 0.24, 0.12]
+    }
+  ]
+}

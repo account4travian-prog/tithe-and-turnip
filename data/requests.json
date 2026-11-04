@@ -1,0 +1,18 @@
+{
+	"version": 2,
+	"max_active_requests": 2,
+	"new_request_chance_per_day": 0.35,
+	"templates": [
+		{ "npc_id": "steward", "item_id": "barley", "quality": "fine", "quantity": 3, "days_to_complete": 5, "reward_coin": 15, "reward_opinion": 8 },
+		{ "npc_id": "priest", "item_id": "turnip", "quality": "common", "quantity": 5, "days_to_complete": 4, "reward_coin": 8, "reward_opinion": 10 },
+		{ "npc_id": "villager_1", "item_id": "wild_berry", "quality": "common", "quantity": 3, "days_to_complete": 3, "reward_coin": 6, "reward_opinion": 6 },
+		{ "npc_id": "villager_2", "item_id": "flint", "quality": "common", "quantity": 4, "days_to_complete": 4, "reward_coin": 10, "reward_opinion": 6 },
+		{ "npc_id": "villager_3", "item_id": "turnip", "quality": "fine", "quantity": 2, "days_to_complete": 4, "reward_coin": 9, "reward_opinion": 5 },
+		{ "npc_id": "villager_4", "item_id": "wild_onion", "quality": "common", "quantity": 3, "days_to_complete": 3, "reward_coin": 7, "reward_opinion": 6 },
+		{ "npc_id": "villager_1", "item_id": "wild_herb", "quality": "common", "quantity": 2, "days_to_complete": 3, "reward_coin": 5, "reward_opinion": 4, "spouse_only": true },
+		{ "npc_id": "villager_2", "item_id": "flint", "quality": "common", "quantity": 3, "days_to_complete": 3, "reward_coin": 6, "reward_opinion": 4, "spouse_only": true },
+		{ "npc_id": "villager_3", "item_id": "turnip", "quality": "common", "quantity": 3, "days_to_complete": 2, "reward_coin": 4, "reward_opinion": 4, "spouse_only": true },
+		{ "npc_id": "villager_4", "item_id": "wood", "quality": "common", "quantity": 3, "days_to_complete": 3, "reward_coin": 6, "reward_opinion": 4, "spouse_only": true },
+		{ "npc_id": "villager_5", "item_id": "oat", "quality": "common", "quantity": 2, "days_to_complete": 3, "reward_coin": 5, "reward_opinion": 4, "spouse_only": true }
+	]
+}

@@ -1,0 +1,23 @@
+# Contract sync tests compare raw bytes, and the generators emit an LF banner
+# followed by source text. Under core.autocrlf=true, a CRLF checkout of the
+# LF-stored contract files is one byte longer than the derived output, which
+# makes the contract-sync suites fail. docs/derive_deepseek.gd embeds its
+# harness section as a literal string, so a CRLF checkout of that script also
+# injects CRLF into the derived DEEPSEEK.md. Force LF for the trio plus the
+# generator scripts so a fresh checkout matches what make_agents.gd and
+# make_deepseek.gd derive.
+AGENTS.md text eol=lf
+CLAUDE.md text eol=lf
+DEEPSEEK.md text eol=lf
+docs/*.gd text eol=lf
+
+# ADR-041 (Sprint 16, art asset integration): Godot always writes .import
+# sidecars and .uid files with LF, regardless of platform. Under
+# core.autocrlf=true a checkout gives them CRLF, so every independent
+# worktree's own `--headless --import` run immediately "modifies" every
+# tracked sidecar back to LF - three parallel workstream agents each hit
+# this and correctly declined to stage the resulting churn. Force LF so a
+# fresh checkout already matches what Godot writes and re-importing is a
+# no-op diff.
+*.import text eol=lf
+*.uid text eol=lf
