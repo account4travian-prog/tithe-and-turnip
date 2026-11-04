@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "family_id": "whitewash_thatch",
+  "description": "Reusable dimetric exterior kit. Geometry comes only from the resolved Godot rig; this file controls architectural rhythm, never placement anchors.",
+  "shared_modules": {
+    "wall_material": "whitewash_timber",
+    "roof_material": "gold_thatch",
+    "door": "door_oak_flat",
+    "window": "window_shutter_flat"
+  },
+  "profiles": {
+    "farmhouse_wide": {
+      "wall_bays": { "south": 3, "east": 2 },
+      "crossbeam_height_ratio": 0.46,
+      "gable_center_post": true,
+      "roof_outline_width_source_px": 8,
+      "roof_ridge_width_source_px": 12,
+      "roof_eave_width_source_px": 10
+    }
+  },
+  "next_source_modules": [
+    "chimney_roof_flat",
+    "shutter_pair_flat",
+    "flower_box_flat",
+    "hanging_sign_flat"
+  ]
+}
